@@ -1,0 +1,510 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+li,li:hover{
+    list-style: none;
+}
+h2{
+    font-family: 'One Day', sans-serif;
+}
+p{
+    font-size:1.2rem;
+    line-height:1.6;
+    font-weight: 500;
+    color:#606060;
+    text-transform: none;
+}
+i{
+    color:#2fccd0;
+}
+/* navbar */
+
+.header{
+   width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)) ,url('../images/headerbg2.jpg');
+    background-size: 100% 110%;
+    clip-path: polygon(100% 0%,100% 77%,50% 100%,0 75%,0 0);
+    position:relative;
+}
+.header:before{
+    content:"";
+    position:absolute;
+    top:0%;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    opacity:0.3;
+    z-index:-1;
+    background:linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+}
+
+.navbar:before{
+    content:"";
+    position:absolute;
+    top:0%;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    opacity:0.3;
+    z-index:-1;
+    background:linear-gradient(to right,#1e5799 0%,#3ccdbb 0%,#16c9f6 100%);
+}
+.nav-item a{
+    color:white;
+    font-weight: bold;
+}
+
+/* end of navbar */
+
+/* header-section */
+.header-section{
+    width:100%;
+    height:inherit;
+    text-align: center;
+    position:relative;
+}
+.center-div{
+   
+    color:#e4fbff;
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+
+.header-btn a{
+    border-radius:100px;
+    border:1px solid white;
+    margin:0 5px;
+    padding:12px 35px;
+    color:white;
+    font-size:1.3rem;
+    line-height: 1.4;
+}  
+.header-btn a:hover{
+    color:#50d1c1;
+    background:white;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div p{
+    color:white;
+    padding:10px 0 20px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+}
+/* end of header-section */
+
+/* header2 */
+.header2{
+    width:100%;
+    height:auto;
+    margin:100px auto;
+    text-align: center;
+}
+.extradiv{
+    background:white;
+    border:medium none;
+    padding:50px ;
+    border-radius:3px;
+
+}
+.extradiv h2{
+    font-family: 'One Day', sans-serif;
+    font-size:1.4rem;
+    margin:20px 0 15px 0;
+    font-weight:700;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+.extradiv{
+    transition:0.4s ease;
+
+}
+.extradiv:hover{
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+    transform:translateY(-20px);
+}
+/* end of header 2 */
+
+
+/* service section */
+.service{
+    background:#f7f7f9;
+    padding:50px 0;
+    margin-bottom:50px;
+}
+.headings{
+    margin-bottom:50px ;
+}
+.names h2{
+    color:#2e2e2e;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;;
+}
+.leftservice{
+    margin:auto auto;
+}
+.servicediv h2{
+    font-family: 'One Day', sans-serif;
+    font-size:1.4rem;
+    margin:20px 0 15px 0;
+    font-weight:700;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+.servicediv p{
+    font-size: 0.9rem;
+}
+.serviceicons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    margin-bottom:25px !important;
+}
+
+/* end of service section */
+
+/* Project section */
+.project{
+    margin:100px 0;
+
+}
+.project h1{
+    font-size:2rem;
+    text-align:center;
+}
+.project p{
+    text-transform: uppercase;
+}
+
+/* end of project section */
+
+/* PRICING SECTION */
+.pricing{
+    width:100%;
+    height:100vh;
+    padding:50px;
+    position:relative
+}
+.pricing:before{
+    content:"";
+    position:absolute;
+    top:0%;
+    bottom:0%;
+    left:0%;
+    right:0%;
+   
+    z-index:-1;
+    background:linear-gradient(160deg,#16c9f6 55%,white 0%,white 100%);
+}
+.money{
+    font-size:2.5rem;
+    line-height: 1;
+    color:#606060;
+}
+
+.card-header{
+    font-size:1.7rem;
+    font-weight: bold;
+    background:white ;
+    padding:25px 0 ;
+
+}
+.card-body{
+    padding:30px 0px ;
+}
+.card-body li{
+    margin:10px 0;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6;
+    color:#606060;
+
+
+}
+
+.card-footer{
+    background:white ;
+    padding:20px 0;
+}
+
+.card-footer a{
+    border-radius:100px;
+    border:1px solid #50d1c1;
+    margin:0 5px;
+    padding:12px 35px;
+    color:#50d1c1;
+    font-size:1.3rem;
+    line-height: 1.4;
+    text-align: center;
+}  
+ .card:hover .card-footer a{
+    color:white;
+    background:#50d1c1;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card{
+    transition:0.4s ease;
+}
+.card:hover{
+    transform:translateY(-20px);
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+.card:hover .card-header, .card:hover .money ,.card:hover .pricing i{
+    color:#50d1c0;
+}
+.pricing i{
+    transform:rotate(-45deg);
+    color:#606060;
+}
+.pricing .shuttle
+{
+    transform:rotate(-90deg);
+    
+}
+.card:hover .card-header, .card:hover .money ,.card:hover i{
+    color:#50d1c0;
+}
+
+/* END OF PRICING SECTION */
+
+
+/* CUSTOMER SECTION */
+.customer{
+    width:100%;
+    height:100vh;
+    padding:80px 0;
+    margin-bottom:5rem;
+    
+}
+.box{
+    text-align:center;
+    border:1px solid rgba(0,0,0,0.3);
+    box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+   
+}
+.box:hover{
+    background:#16c9f6;
+}
+.box:hover p{
+color:white;
+}
+.customer p{
+    font: size 1rem;
+    line-height: 1.2;
+    text-transform: none;
+}
+.carousel-indicators{
+    position:absolute;
+    right:0;
+    bottom:-50px !important;
+    
+}
+.carousel-indicators li{
+    background: #16c9f6 !important;
+}
+
+.box a img{
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    margin-top:20px;
+}
+.box h1{
+    font-size:1.8rem;
+    color:black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.box h2{
+    font-size:1.4rem;
+    color:black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* CONTACT SECTION */
+
+
+.contact{
+    width:100%;
+    height:100vh;
+    padding:120px 0;
+    position:relative;
+}
+.contact:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:-1;
+    background:linear-gradient( 330deg, #16c9f6 55%,white 0%);
+}
+.contact p{
+    text-transform: capitalize;
+}
+.formbtn button{
+    border:1px solid transparent;
+    border-radius: 100px;
+    margin:0 5px;
+    padding:12px 35px;
+    color:transparent;
+    
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+
+}
+form:hover .formbtn button{
+    background:white;
+    color:#50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+
+/* END OF CONTACT SECTION */
+
+/* NEWSLETTER SECTION */
+.newsletter{
+    width:100%;
+    height:auto;
+    margin:80px auto;
+
+}
+.news{
+    
+    border-radius:100px 0 0 100px !important;
+    min-width: 150x;
+    min-height: 45px;
+}
+.input-group-text{
+    color:white;
+    background:#50d1c0;
+    border-radius: 0 100px 100px 0 ;
+  
+}
+/* END OF NEWSLETTER SECTION */
+
+/* FOOTER */
+.footersection{
+    width:100%;
+    height:auto;
+    padding:70px 0 20px 0;
+    background:#00abff;
+    position:relative
+}
+.footersection p{
+    text-transform: none !important;
+    color:white
+}
+.footersection li a{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 500;
+  
+    color:white;
+    
+}
+.footersection h3{
+    text-transform: uppercase;
+    color:white;
+    margin-bottom:25px;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+#myBtn{
+    /* display:none; */
+    position:fixed;
+    bottom:20px;
+    right:40px;
+    z-index:10;
+    border:none;
+    color:white;
+    background:#00abff;
+
+}
+#myBtn:hover{
+    background:grey;
+}
+
+/* 
+*****************************MEDIA QUERIES************************************************************************* */
+/* for screen size less than 768 px these properties will show up */ 
+@media(max-width:768px)
+{
+    .header-section h1{
+        font-size: 2rem;
+    }
+    .center-div{
+        top:60%;
+    }
+.nav-item{
+    text-align: center !important;
+    
+    }
+    .pricing ,.customer ,.contact{
+        height:auto;
+        margin:30px 0;
+        
+    }
+    .pricing{
+        background-color: #16c9f6;
+    }
+    .pricing i{
+        display:block;
+        margin-bottom: 10px;
+
+    }
+    /* .pricing .shuttle{
+        margin-bottom: 10px;
+    } */
+   
+    .second{
+        margin: 30px 0;
+    }
+    .project h1{
+        font-size: 1.3rem;
+        
+    }
+    .project p{
+        text-transform: capitalize;
+        font-size: 0.9rem;
+    }
+    .countdiv{
+        border:1px solid black;
+        margin:0 2px;
+
+    }
+    .footersection h3{
+        margin:5px;
+        padding:10px;
+    }
+}
+
+
